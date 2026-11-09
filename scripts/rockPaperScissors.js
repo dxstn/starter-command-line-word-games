@@ -20,7 +20,7 @@ console.log('Dein Zug war: ' + playersTurn)
 
 if (playersTurn !== 'rock' && playersTurn !== 'scissors' && playersTurn !== 'paper') {
     console.log('Das war leider ein ungültiger Zug. Bitte versuche es erneut mit rock, scissors or paper')
-    process.exit()
+    process.exit(1)
 }
 
 const moves = ['rock', 'scissors', 'paper'];

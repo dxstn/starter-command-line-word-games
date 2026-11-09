@@ -1,0 +1,23 @@
+{
+  "student": "dustin-jabs98",
+  "unlocks": [
+    {
+      "task": "FR005",
+      "at": "2026-11-09T15:41:44.440Z",
+      "route": "written",
+      "branch": "rock-paper-scissors",
+      "commits": [
+        "59bd20f9b6c7e2210c6c6eb65094f425aa2143ec"
+      ]
+    },
+    {
+      "task": "FR008",
+      "at": "2026-11-09T15:41:44.682Z",
+      "route": "written",
+      "branch": "rock-paper-scissors",
+      "commits": [
+        "59bd20f9b6c7e2210c6c6eb65094f425aa2143ec"
+      ]
+    }
+  ]
+}

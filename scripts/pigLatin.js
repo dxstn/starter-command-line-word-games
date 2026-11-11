@@ -20,3 +20,29 @@
 // FR012 — Pass non-letter characters through unchanged.
 // Punctuation and numbers in the input should appear in the output exactly as
 // given, not translated or dropped.
+const inputText = process.argv[2];
+
+if (inputText === undefined) {
+    console.log('Bitte tippe einen Satz ein!')
+    process.exit(1)
+}
+
+const wordArray = inputText.toLowerCase().split(' ')
+let sentenceInPigLatin = ''
+
+wordArray.forEach(word => {
+    const vocals = ['a', 'e', 'i', 'o', 'u']
+    
+    if (vocals.includes(word[0])) {
+        sentenceInPigLatin += word + 'way' + ' '
+    } else if (!vocals.includes(word[0]) && vocals.includes(word[1])) {
+        sentenceInPigLatin += word.slice(1);
+        sentenceInPigLatin += word[0] + 'ay' + ' '
+
+    } else if (!vocals.includes(word[0]) && !vocals.includes(word[1])) {
+        sentenceInPigLatin += word.slice(2);
+        sentenceInPigLatin += word[0] + word[1] + 'ay' + ' ';
+    }
+});
+
+console.log(sentenceInPigLatin)
